@@ -1,3 +1,5 @@
+# test
+
 # Created by newuser for 5.4.2
 
 autoload -U promptinit; promptinit
@@ -36,6 +38,11 @@ alias brewski='brew update && brew upgrade && brew cleanup; brew prune; brew doc
 # Functions
 #----------------------------------------
 #
+
+re(){
+  mv "$1" ~/.Trash
+}
+
 
 sub() {
   open $1 -a "Sublime Text"

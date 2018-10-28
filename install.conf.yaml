@@ -1,3 +1,11 @@
+# Settings
+- defaults:
+    link:
+      create: true
+      relink: true
+      force: true # Swap the original file
+
+
 - clean: ['~']
 
 - link:
@@ -8,5 +16,7 @@
         create: true
     ~/.zprofile: zprofile
     ~/.zshrc: zshrc
-
+     # VS Code
+    ~/Library/Application Support/Code/User/settings.json: vscode/settings.json
+    ~/Library/Application Support/Code/User/keybindings.json: vscode/keybindings.json
 
