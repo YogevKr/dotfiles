@@ -13,6 +13,8 @@ if [ -f '/Users/yogev/Downloads/google-cloud-sdk/path.zsh.inc' ]; then source '/
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/yogev/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then source '/Users/yogev/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
 
+export PATH=~/.local/bin:$PATH
+
 ####### save history #######
 HISTFILE=~/.zsh_history
 HISTSIZE=999999999
@@ -26,8 +28,9 @@ alias conda37='source activate python37'
 alias up_conda2='conda27 && conda upgrade --all --yes && conda clean --all --yes && sd'
 alias up_conda36='conda36 && conda upgrade --all --yes && conda clean --all --yes && sd'
 alias up_conda37='conda37 && conda upgrade --all --yes && conda clean --all --yes && sd'
+
 alias jnbc='conda37 && cd /Users/yogev/Google\ Drive/IDC/Year\ 3/Semester\ 1/SciComPy/SciComPy_mirrored && jupyter notebook --no-browser'
-alias jlc='conda37 && cd /Users/yogev/Google\ Drive/IDC/Year\ 3/Semester\ 1/SciComPy/SciComPy_mirrored && jupyter lab --no-browser'
+alias jlc='conda37 && cd /Users/yogev/Google\ Drive/IDC/Year\ 3/Semester\ 1/SciComPy && jupyter lab --no-browser'
 
 alias d='deactivate'
 alias sd='source deactivate'
@@ -75,3 +78,10 @@ alias ll='ls -la'
 alias reload='source ~/.zshrc'
 alias ge='ssh -i ~/.ssh/google_compute_engine_yogev_kr  yogev_kr@104.198.243.181'
 alias pi='ssh -i ~/.ssh/id_rsa_yogev_kriger pi@192.168.1.20'
+
+# tabtab source for serverless package
+# uninstall by removing these lines or running `tabtab uninstall serverless`
+[[ -f /usr/local/lib/node_modules/serverless/node_modules/tabtab/.completions/serverless.zsh ]] && . /usr/local/lib/node_modules/serverless/node_modules/tabtab/.completions/serverless.zsh
+# tabtab source for sls package
+# uninstall by removing these lines or running `tabtab uninstall sls`
+[[ -f /usr/local/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.zsh ]] && . /usr/local/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.zsh
