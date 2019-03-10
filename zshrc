@@ -1,11 +1,38 @@
-# test
-
-# Created by newuser for 5.4.2
-
 autoload -U promptinit; promptinit
 prompt pure
 
 source /Users/yogev/.zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+
+# pyenv
+
+export LDFLAGS="-L/usr/local/opt/readline/lib"
+export CPPFLAGS="-I/usr/local/opt/readline/include"
+export PKG_CONFIG_PATH="/usr/local/opt/readline/lib/pkgconfig"
+
+eval "$(pyenv init -)"
+
+
+## Run pipenv shell automatically
+function auto_pipenv_shell {
+    if [ ! -n "${PIPENV_ACTIVE+1}" ]; then
+        if [ -f "Pipfile" ] ; then
+            pipenv shell
+        fi
+    fi
+}
+
+function cd {
+    builtin cd "$@"
+    auto_pipenv_shell
+}
+
+
+function vim {
+    nvim "$@"
+}
+
+
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/yogev/Downloads/google-cloud-sdk/path.zsh.inc' ]; then source '/Users/yogev/Downloads/google-cloud-sdk/path.zsh.inc'; fi
@@ -22,9 +49,9 @@ SAVEHIST=$HISTSIZE
 
 ## Anaconda
 export PATH=/usr/local/anaconda3/bin:"$PATH"
-alias conda27='source activate python27'
-alias conda36='source activate python36'
-alias conda37='source activate python37'
+alias conda27='source activate /anaconda3/envs/python27'
+alias conda36='bash --init-file <(echo "source activate /anaconda3/envs/python36;")'
+alias conda37='source activate /anaconda3/envs/python37'
 alias up_conda2='conda27 && conda upgrade --all --yes && conda clean --all --yes && sd'
 alias up_conda36='conda36 && conda upgrade --all --yes && conda clean --all --yes && sd'
 alias up_conda37='conda37 && conda upgrade --all --yes && conda clean --all --yes && sd'
