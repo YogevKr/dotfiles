@@ -1,5 +1,5 @@
 [user]
-	name = yogev
+	name = Yogev Kriger
 	email = yogev.kr@gmail.com
 [core]
 	autocrlf = input
@@ -12,3 +12,5 @@
 	trustExitCode = true
 [commit]
 	template = /Users/yogev/.stCommitMsg
+[credential]
+	helper = osxkeychain

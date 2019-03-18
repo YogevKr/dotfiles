@@ -1,7 +1,19 @@
+plugins=(
+  git
+  bundler
+  dotenv
+  osx
+  rake
+  rbenv
+  ruby
+  )
+
+
 autoload -U promptinit; promptinit
 prompt pure
 
 source /Users/yogev/.zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 
 # pyenv
@@ -101,10 +113,12 @@ alias canary="/Applications/Google\ Chrome\ Canary.app/Contents/MacOS/Google\ Ch
 
 alias sem3='cd /Users/yogev/Google\ Drive/IDC/Year\ 3/Semester\ 1'
 
-alias ll='ls -la'
+alias ll='exa -la'
 alias reload='source ~/.zshrc'
 alias ge='ssh -i ~/.ssh/google_compute_engine_yogev_kr  yogev_kr@104.198.243.181'
 alias pi='ssh -i ~/.ssh/id_rsa_yogev_kriger pi@192.168.1.20'
+
+alias wifi-pass='wifi-password'
 
 # tabtab source for serverless package
 # uninstall by removing these lines or running `tabtab uninstall serverless`
