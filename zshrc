@@ -16,7 +16,7 @@ prompt pure
 ## fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-
+ [ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
 source /Users/yogev/.zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 

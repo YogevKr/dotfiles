@@ -20,3 +20,6 @@
     ~/.iTerm/com.googlecode.iterm2.plist:
         path: iTerm/config
         create: true
+    ~/.config/karabiner/karabiner.json:
+        path: karabiner.json
+        create: true
