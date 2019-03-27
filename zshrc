@@ -6,11 +6,16 @@ plugins=(
   rake
   rbenv
   ruby
+  brew
   )
 
 
 autoload -U promptinit; promptinit
 prompt pure
+
+## fzf
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
 
 source /Users/yogev/.zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
@@ -44,32 +49,12 @@ function vim {
     nvim "$@"
 }
 
-
-
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/yogev/Downloads/google-cloud-sdk/path.zsh.inc' ]; then source '/Users/yogev/Downloads/google-cloud-sdk/path.zsh.inc'; fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f '/Users/yogev/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then source '/Users/yogev/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
-
 export PATH=~/.local/bin:$PATH
 
 ####### save history #######
 HISTFILE=~/.zsh_history
 HISTSIZE=999999999
 SAVEHIST=$HISTSIZE
-
-## Anaconda
-export PATH=/usr/local/anaconda3/bin:"$PATH"
-alias conda27='source activate /anaconda3/envs/python27'
-alias conda36='bash --init-file <(echo "source activate /anaconda3/envs/python36;")'
-alias conda37='source activate /anaconda3/envs/python37'
-alias up_conda2='conda27 && conda upgrade --all --yes && conda clean --all --yes && sd'
-alias up_conda36='conda36 && conda upgrade --all --yes && conda clean --all --yes && sd'
-alias up_conda37='conda37 && conda upgrade --all --yes && conda clean --all --yes && sd'
-
-alias jnbc='conda37 && cd /Users/yogev/Google\ Drive/IDC/Year\ 3/Semester\ 1/SciComPy/SciComPy_mirrored && jupyter notebook --no-browser'
-alias jlc='conda37 && cd /Users/yogev/Google\ Drive/IDC/Year\ 3/Semester\ 1/SciComPy && jupyter lab --no-browser'
 
 alias d='deactivate'
 alias sd='source deactivate'
@@ -85,12 +70,6 @@ re(){
   mv "$1" ~/.Trash
 }
 
-
-sub() {
-  open $1 -a "Sublime Text"
-}
-
-
 sem(){
   year=$(($1-$1/2))
   sem=$(($1/2))
@@ -101,6 +80,27 @@ haste() {
 	a=$(cat); curl -X POST -s -d "$a" https://hastebin.com/documents | awk -F '"' '{print "https://hastebin.com/"$4}'; 
 }
 
+nbrew() {
+  local dump_commands=('install' 'uninstall') # Include all commands that should do a brew dump
+  local main_command="${1}"
+
+  brew ${@}
+
+  for command in "${dump_commands[@]}"; do
+    [[ "${command}" == "${main_command}" ]] && brew bundle dump --file="${HOME}/.Brewfile" --force
+  done
+}
+
+#----------------------------------------
+#fzf
+#----------------------------------------
+
+# fh - repeat history
+h() {
+  print -z $( ([ -n "$ZSH_NAME" ] && fc -l 1 || history) | fzf +s --tac | sed 's/ *[0-9]* *//')
+}
+
+
 
 #----------------------------------------
 # Aliases
@@ -109,7 +109,6 @@ haste() {
 
 alias chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
 alias canary="/Applications/Google\ Chrome\ Canary.app/Contents/MacOS/Google\ Chrome\ Canary"
-
 
 alias sem3='cd /Users/yogev/Google\ Drive/IDC/Year\ 3/Semester\ 1'
 
@@ -120,9 +119,3 @@ alias pi='ssh -i ~/.ssh/id_rsa_yogev_kriger pi@192.168.1.20'
 
 alias wifi-pass='wifi-password'
 
-# tabtab source for serverless package
-# uninstall by removing these lines or running `tabtab uninstall serverless`
-[[ -f /usr/local/lib/node_modules/serverless/node_modules/tabtab/.completions/serverless.zsh ]] && . /usr/local/lib/node_modules/serverless/node_modules/tabtab/.completions/serverless.zsh
-# tabtab source for sls package
-# uninstall by removing these lines or running `tabtab uninstall sls`
-[[ -f /usr/local/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.zsh ]] && . /usr/local/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.zsh
