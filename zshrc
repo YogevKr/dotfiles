@@ -81,7 +81,7 @@ haste() {
 }
 
 nbrew() {
-  local dump_commands=('install' 'uninstall') # Include all commands that should do a brew dump
+  local dump_commands=('install' 'uninstall' 'cask') # Include all commands that should do a brew dump
   local main_command="${1}"
 
   brew ${@}
