@@ -17,4 +17,6 @@
     ~/.zprofile: zprofile
     ~/.zshrc: zshrc
     ~/.Brewfile: Brewfile
-    ~/.iTerm/com.googlecode.iterm2.plist: iTerm
+    ~/.iTerm/com.googlecode.iterm2.plist:
+        path: iTerm/config
+        create: true
