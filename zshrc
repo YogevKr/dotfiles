@@ -6,7 +6,6 @@ plugins=(
   rake
   rbenv
   ruby
-  brew
   )
 
 
@@ -20,14 +19,22 @@ prompt pure
 source /Users/yogev/.zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
+# gcloud
+source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc'
+source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc'
+
+
+# asdf
+. $HOME/.asdf/asdf.sh
+. $HOME/.asdf/completions/asdf.bash
 
 # pyenv
 
-export LDFLAGS="-L/usr/local/opt/readline/lib"
-export CPPFLAGS="-I/usr/local/opt/readline/include"
-export PKG_CONFIG_PATH="/usr/local/opt/readline/lib/pkgconfig"
+#export LDFLAGS="-L/usr/local/opt/readline/lib"
+#export CPPFLAGS="-I/usr/local/opt/readline/include"
+#export PKG_CONFIG_PATH="/usr/local/opt/readline/lib/pkgconfig"
 
-eval "$(pyenv init -)"
+#eval "$(pyenv init -)"
 
 
 ## Run pipenv shell automatically
@@ -50,6 +57,10 @@ function vim {
 }
 
 export PATH=~/.local/bin:$PATH
+
+export LDFLAGS="-L/usr/local/opt/zlib/lib"
+export CPPFLAGS="-I/usr/local/opt/zlib/include"
+export PKG_CONFIG_PATH="/usr/local/opt/zlib/lib/pkgconfig"
 
 ####### save history #######
 HISTFILE=~/.zsh_history
@@ -118,4 +129,3 @@ alias ge='ssh -i ~/.ssh/google_compute_engine_yogev_kr  yogev_kr@104.198.243.181
 alias pi='ssh -i ~/.ssh/id_rsa_yogev_kriger pi@192.168.1.20'
 
 alias wifi-pass='wifi-password'
-

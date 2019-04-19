@@ -1,9 +1,11 @@
+tap "candid82/brew"
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/core"
 tap "homebrew/dupes"
 tap "homebrew/services"
 tap "mas-cli/tap", pin: true
+tap "yqrashawn/goku"
 brew "autojump"
 brew "bat"
 brew "chromedriver"
@@ -41,8 +43,11 @@ brew "thefuck"
 brew "tmux"
 brew "wget"
 brew "wifi-password"
+brew "zlib"
 brew "zsh"
 brew "zsh-autosuggestions"
+brew "yqrashawn/goku/goku"
+cask "1password-cli"
 cask "alfred"
 cask "anydesk"
 cask "appcleaner"
@@ -58,6 +63,7 @@ cask "expressvpn"
 cask "fantastical"
 cask "fluid"
 cask "google-backup-and-sync"
+cask "google-cloud-sdk"
 cask "iterm2"
 cask "itsycal"
 cask "jupyter-notebook-viewer"
@@ -68,6 +74,7 @@ cask "ngrok"
 cask "notion"
 cask "numi"
 cask "osxfuse"
+cask "paw"
 cask "pdf-expert"
 cask "slack"
 cask "sourcetree"
@@ -77,24 +84,27 @@ cask "transmission"
 cask "tripmode"
 cask "visual-studio-code"
 cask "whatsapp"
-mas "2Do", id: 477670270
-mas "Airmail 3", id: 918858936
-mas "Annotate", id: 918207447
-mas "Battery Health", id: 490192174
-mas "Be Focused Pro", id: 961632517
-mas "Bear", id: 1091189122
-mas "Dark Reader for Safari", id: 1438243180
-mas "Drawful 2", id: 1121426744
-mas "Keynote", id: 409183694
-mas "Magnet", id: 441258766
-mas "Numbers", id: 409203825
-mas "Owly", id: 882812218
-mas "Pages", id: 409201541
-mas "Pocket", id: 568494494
-mas "SnippetsLab", id: 1006087419
-mas "The Unarchiver", id: 425424353
-mas "Things3", id: 904280696
-mas "Trello", id: 1278508951
-mas "Who's On My WiFi", id: 909760813
-mas "WiFi Explorer", id: 494803304
-mas "Xcode", id: 497799835
+mas "", id: 568494494
+mas "", id: 904280696
+mas "", id: 490192174
+mas "", id: 909760813
+mas "", id: 409183694
+mas "", id: 1278508951
+mas "", id: 441258766
+mas "", id: 918858936
+mas "", id: 1333542190
+mas "", id: 425424353
+mas "", id: 494803304
+mas "", id: 961632517
+mas "", id: 1438243180
+mas "", id: 497799835
+mas "", id: 409203825
+mas "", id: 409201541
+mas "", id: 1006087419
+mas "", id: 1091189122
+mas "", id: 477670270
+mas "", id: 918207447
+mas "", id: 1295203466
+mas "", id: 736189492
+mas "", id: 1121426744
+mas "", id: 882812218
