@@ -24,17 +24,18 @@ source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.in
 source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc'
 
 
-# asdf
-. $HOME/.asdf/asdf.sh
-. $HOME/.asdf/completions/asdf.bash
+# go pathes
+export GOPATH=$HOME/golang
+export GOROOT=/usr/local/opt/go/libexec
+export PATH=$PATH:$GOPATH/bin
+export PATH=$PATH:$GOROOT/bin
 
 # pyenv
 
-#export LDFLAGS="-L/usr/local/opt/readline/lib"
-#export CPPFLAGS="-I/usr/local/opt/readline/include"
-#export PKG_CONFIG_PATH="/usr/local/opt/readline/lib/pkgconfig"
-
-#eval "$(pyenv init -)"
+export LDFLAGS="-L/usr/local/opt/readline/lib"
+export CPPFLAGS="-I/usr/local/opt/readline/include"
+export PKG_CONFIG_PATH="/usr/local/opt/readline/lib/pkgconfig"
+eval "$(pyenv init -)"
 
 
 ## Run pipenv shell automatically
