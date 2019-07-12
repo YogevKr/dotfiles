@@ -3,6 +3,7 @@ tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/core"
 tap "homebrew/services"
+tap "jesseduffield/lazydocker"
 tap "mas-cli/tap", pin: true
 tap "yqrashawn/goku"
 brew "autojump"
@@ -49,6 +50,7 @@ brew "z"
 brew "zlib"
 brew "zsh"
 brew "zsh-autosuggestions"
+brew "jesseduffield/lazydocker/lazydocker"
 brew "yqrashawn/goku/goku"
 cask "1password-cli"
 cask "alfred"
@@ -98,7 +100,6 @@ mas "Battery Health", id: 490192174
 mas "Be Focused Pro", id: 961632517
 mas "Bear", id: 1091189122
 mas "Dark Reader for Safari", id: 1438243180
-mas "Drawful 2", id: 1121426744
 mas "Keynote", id: 409183694
 mas "Magnet", id: 441258766
 mas "Microsoft Remote Desktop", id: 1295203466
@@ -107,10 +108,12 @@ mas "Numbers", id: 409203825
 mas "Owly", id: 882812218
 mas "Pages", id: 409201541
 mas "Pocket", id: 568494494
+mas "Reeder", id: 1449412482
 mas "SnippetsLab", id: 1006087419
 mas "The Unarchiver", id: 425424353
 mas "Things", id: 904280696
 mas "Trello", id: 1278508951
+mas "uBlock", id: 1385985095
 mas "Who's On My WiFi", id: 909760813
 mas "WiFi Explorer", id: 494803304
 mas "Xcode", id: 497799835

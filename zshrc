@@ -1,14 +1,3 @@
-plugins=(
-  git
-  bundler
-  dotenv
-  osx
-  rake
-  rbenv
-  ruby
-  )
-
-
 autoload -U promptinit; promptinit
 prompt pure
 
@@ -52,6 +41,12 @@ function cd {
     auto_pipenv_shell
 }
 
+
+## z - jump around
+if command -v brew >/dev/null 2>&1; then
+	# Load rupa's z if installed
+	[ -f $(brew --prefix)/etc/profile.d/z.sh ] && source $(brew --prefix)/etc/profile.d/z.sh
+fi
 
 function vim {
     nvim "$@"
