@@ -22,7 +22,12 @@ cd ~/.dotfiles
 reload
 ```
 
-## 4. Pull secrets
+## 4. Enable karabiner configuration
+```console
+goku
+```
+
+## 5. Pull secrets
 
 ```console
 cd ~/.dotfiles
@@ -31,12 +36,12 @@ source pull-secrets.sh
 
 That's it!
 
-## 5. Reboot
+## 6. Reboot
 
 ```console
 sudo reboot
 ```
 
-## 6. Profit!
+## 7. Done!
 
 :beers:
