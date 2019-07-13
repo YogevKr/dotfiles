@@ -1,2 +1,2 @@
-./zsh/*secret*
-./ssh/config
+zsh/*secret*
+ssh/config
