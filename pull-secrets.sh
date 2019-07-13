@@ -15,15 +15,15 @@ then
         op get document 'ssh_config.work' > ~/.dotfiles/ssh/config
 	ln -sfn ~/.dotfiles/ssh/config ~/.ssh/config
 
-elif [ $1 == "private" ]
+elif [ $1 == "personal" ]
 then
-	op get document 'secrets.zsh.private' > ~/.dotfiles/zsh/secrets.zsh
+	op get document 'secrets.zsh.personal' > ~/.dotfiles/zsh/secrets.zsh
 
 	# ssh
-	op get document 'ssh_config.private' > ~/.dotfiles/ssh/config
+	op get document 'ssh_config.personal' > ~/.dotfiles/ssh/config
 	ln -sfn ~/.dotfiles/ssh/config ~/.ssh/config
 else
-	echo "Input must be work or private only."
+	echo "Input must be work or personal only."
 fi
 
 echo "Done!"
