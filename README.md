@@ -31,12 +31,12 @@ source pull-secrets.sh
 
 That's it!
 
-## 4. Reboot
+## 5. Reboot
 
 ```console
 sudo reboot
 ```
 
-## 5. Profit!
+## 6. Profit!
 
 :beers:
