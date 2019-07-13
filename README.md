@@ -1,7 +1,5 @@
 ## Installation 
 
-How I setup a new Mac.
-
 ## 1. Install brew
 
 ```console
