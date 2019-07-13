@@ -9,17 +9,22 @@
 - clean: ['~']
 
 - link:
-    ~/.bash_profile: bash_profile
+    # git
     ~/.gitconfig: gitconfig
+    # ssh
     ~/.ssh/config:
         path: ssh/config
         create: true
-    ~/.zprofile: zprofile
-    ~/.zshrc: zshrc
+    # Zsh    
+    ~/.zshrc: zsh/zshrc.zsh
+    ~/.zprofile: zsh/zprofile.zsh
+    # Brew
     ~/.Brewfile: Brewfile
+    # iTerm
     ~/.iTerm/com.googlecode.iterm2.plist:
         path: iTerm/config
         create: true
+    # karabiner
     ~/.config/karabiner/karabiner.json:
         path: karabiner/karabiner.json
         create: true
