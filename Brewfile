@@ -1,4 +1,5 @@
 tap "candid82/brew"
+tap "getantibody/tap"
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/core"
@@ -100,7 +101,6 @@ mas "Battery Health", id: 490192174
 mas "Be Focused Pro", id: 961632517
 mas "Bear", id: 1091189122
 mas "Dark Reader for Safari", id: 1438243180
-mas "Drawful 2", id: 1121426744
 mas "Keynote", id: 409183694
 mas "Magnet", id: 441258766
 mas "Microsoft Remote Desktop", id: 1295203466
