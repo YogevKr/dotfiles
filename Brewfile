@@ -7,7 +7,6 @@ tap "homebrew/services"
 tap "jesseduffield/lazydocker"
 tap "mas-cli/tap", pin: true
 tap "yqrashawn/goku"
-brew "autojump"
 brew "bat"
 brew "chromedriver"
 brew "curl"
