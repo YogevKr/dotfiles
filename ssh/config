@@ -1,5 +1,0 @@
-Host 35.229.28.94
-	IdentityFile ~/.ssh/google_compute_engine_yogev_kr
-
-Host 192.168.1.20 
-	IdentityFile ~/.ssh/id_rsa
