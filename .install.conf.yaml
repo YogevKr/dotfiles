@@ -11,10 +11,6 @@
 - link:
     # git
     ~/.gitconfig: gitconfig
-    # ssh
-    ~/.ssh/config:
-        path: ssh/config
-        create: true
     # Zsh    
     ~/.zshrc: zsh/zshrc.zsh
     ~/.zprofile: zsh/zprofile.zsh
