@@ -1,0 +1,9 @@
+mafredri/zsh-async
+rupa/z
+zsh-users/zsh-completions
+zsh-users/zsh-autosuggestions 
+junegunn/fzf
+sindresorhus/pure
+zsh-users/zsh-history-substring-search
+zsh-users/zsh-syntax-highlighting
+spwhitt/nix-zsh-completions

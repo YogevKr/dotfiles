@@ -1,5 +1,7 @@
 # Setting and editing of env variables.
 
+export LC_ALL=en_US.UTF-8
+
 # Vars
 export EDITOR='nvim'
 export SUDO_EDITOR='nvim'
