@@ -27,7 +27,13 @@ reload
 goku
 ```
 
-## 5. Pull secrets
+## 5. Install nvim plugins
+```console
+nvim
+:PlugInstall
+```
+
+## 6. Pull secrets
 
 ```console
 cd ~/.dotfiles
@@ -36,12 +42,12 @@ source pull-secrets.sh
 
 That's it!
 
-## 6. Reboot
+## 7. Reboot
 
 ```console
 sudo reboot
 ```
 
-## 7. Done!
+## 8. Done!
 
 :beers:
