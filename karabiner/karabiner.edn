@@ -16,7 +16,9 @@
                  [:i [:km "open: Chrome"]]
                  [:j [:km "open: iTerm"]]
                  [:l [:km "open: VS Code"]]
-                 [:m [:km "open: whatsapp"]]]}
+                 [:m [:km "open: whatsapp"]]
+                 [:s [:km "open: Slack"]]
+                 ]}
         {:des "okey (alfred)"
          :rules [:o-mode
                  [:1 :!C1]
