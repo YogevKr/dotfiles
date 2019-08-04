@@ -20,7 +20,7 @@ brew "fzf"
 brew "gcc"
 brew "gdb"
 brew "geckodriver"
-brew "ghostscript", link: false
+brew "ghostscript"
 brew "git"
 brew "openssl"
 brew "readline"
@@ -31,6 +31,7 @@ brew "htop"
 brew "httpie"
 brew "libtool", link: false
 brew "jq", link: false
+brew "lazygit"
 brew "libpcap"
 brew "libxslt"
 brew "libyaml"
@@ -41,7 +42,7 @@ brew "neofetch"
 brew "neovim"
 brew "nmap"
 brew "node"
-brew "pgcli", link: false
+brew "pgcli"
 brew "piknik"
 brew "postgresql"
 brew "pv"
@@ -106,6 +107,7 @@ cask "wkhtmltopdf"
 mas "1Password 7", id: 1333542190
 mas "2Do", id: 477670270
 mas "Airmail", id: 918858936
+mas "Airmail Zero", id: 1460809171
 mas "Annotate", id: 918207447
 mas "Battery Health", id: 490192174
 mas "Be Focused Pro", id: 961632517
@@ -117,9 +119,11 @@ mas "Microsoft Remote Desktop", id: 1295203466
 mas "Numbers", id: 409203825
 mas "Owly", id: 882812218
 mas "Pocket", id: 568494494
+mas "Reeder", id: 1449412482
 mas "SnippetsLab", id: 1006087419
 mas "The Unarchiver", id: 425424353
 mas "Things", id: 904280696
+mas "Todoist", id: 585829637
 mas "Trello", id: 1278508951
 mas "Who's On My WiFi", id: 909760813
 mas "WiFi Explorer", id: 494803304
