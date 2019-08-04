@@ -119,7 +119,6 @@ mas "Microsoft Remote Desktop", id: 1295203466
 mas "Numbers", id: 409203825
 mas "Owly", id: 882812218
 mas "Pocket", id: 568494494
-mas "Reeder", id: 1449412482
 mas "SnippetsLab", id: 1006087419
 mas "The Unarchiver", id: 425424353
 mas "Things", id: 904280696
