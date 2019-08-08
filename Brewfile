@@ -8,6 +8,7 @@ tap "homebrew/core"
 tap "homebrew/services"
 tap "jesseduffield/lazydocker"
 tap "mas-cli/tap", pin: true
+tap "sachaos/todoist"
 tap "yqrashawn/goku"
 brew "autoconf", link: false
 brew "automake", link: false
@@ -27,9 +28,10 @@ brew "readline"
 brew "sqlite"
 brew "python"
 brew "go"
+brew "libtool", link: false
+brew "graphviz"
 brew "htop"
 brew "httpie"
-brew "libtool", link: false
 brew "jq", link: false
 brew "lazygit"
 brew "libpcap"
@@ -68,11 +70,13 @@ brew "aws/tap/aws-sam-cli"
 brew "getantibody/tap/antibody"
 brew "jesseduffield/lazydocker/lazydocker"
 brew "mas-cli/tap/mas"
+brew "sachaos/todoist/todoist"
 brew "yqrashawn/goku/goku"
 cask "1password-cli"
 cask "alfred"
 cask "appcleaner"
 cask "authy"
+cask "background-music"
 cask "bartender"
 cask "contexts"
 cask "daisydisk"
@@ -119,6 +123,7 @@ mas "Microsoft Remote Desktop", id: 1295203466
 mas "Numbers", id: 409203825
 mas "Owly", id: 882812218
 mas "Pocket", id: 568494494
+mas "Reeder", id: 1449412482
 mas "SnippetsLab", id: 1006087419
 mas "The Unarchiver", id: 425424353
 mas "Things", id: 904280696

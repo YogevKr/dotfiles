@@ -5,3 +5,4 @@ alias d='deactivate'
 alias sd='source deactivate'
 alias brewski='brew update && brew upgrade && brew cleanup; brew prune; brew doctor'
 alias lo='eval $(op signin my)'
+
