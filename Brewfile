@@ -93,7 +93,6 @@ cask "whatsapp"
 cask "wireshark"
 mas "1Password 7", id: 1333542190
 mas "2Do", id: 477670270
-mas "Airmail", id: 918858936
 mas "Annotate", id: 918207447
 mas "Battery Health", id: 490192174
 mas "Be Focused Pro", id: 961632517
@@ -109,6 +108,7 @@ mas "Pages", id: 409201541
 mas "Pocket", id: 568494494
 mas "Reeder", id: 1449412482
 mas "SnippetsLab", id: 1006087419
+mas "Spark", id: 1176895641
 mas "The Unarchiver", id: 425424353
 mas "Things", id: 904280696
 mas "Trello", id: 1278508951
