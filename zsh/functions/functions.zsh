@@ -60,9 +60,8 @@ zs() {
 
 # start_notebook_sagemaker and add stop task to todoist
 start_notebook_sagemaker(){
-    aws sagemaker start-notebook-instance --notebook-instance-name pinky 
-    todoist add "Stop sagemaker pinky notebook" -d "today 19:00" -L 2152997509 
-    todoist --csv l --filter "@sagemaker_pinky_notebook" > /tmp/running_sagemaker_notebook.txt
+    aws sagemaker start-notebook-instance --notebook-instance-name pinky
+    echo "https://pinky.notebook.us-east-1.sagemaker.aws/lab"
 }
 
 

@@ -1,6 +1,6 @@
 [user]
-	name = yogev
-	email = yogev.kr@gmail.com
+	name = Yogev Kriger
+	email = yogev@appcard.com
 [core]
 	autocrlf = input
 	excludesfile = /Users/yogev/.gitignore_global

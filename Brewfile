@@ -9,7 +9,9 @@ tap "homebrew/services"
 tap "jesseduffield/lazydocker"
 tap "mas-cli/tap", pin: true
 tap "sachaos/todoist"
+tap "wtfutil/wtfutil"
 tap "yqrashawn/goku"
+brew "apache-spark"
 brew "autoconf", link: false
 brew "automake", link: false
 brew "bat"
@@ -32,7 +34,7 @@ brew "libtool", link: false
 brew "graphviz"
 brew "htop"
 brew "httpie"
-brew "jq", link: false
+brew "jq"
 brew "lazygit"
 brew "libpcap"
 brew "libxslt"
@@ -53,6 +55,7 @@ brew "python@2"
 brew "rclone"
 brew "redis", restart_service: true
 brew "ruby", link: true
+brew "s3cmd"
 brew "screenfetch"
 brew "tcptraceroute"
 brew "telnet"
@@ -62,6 +65,7 @@ brew "unixodbc"
 brew "unzip"
 brew "wget"
 brew "wifi-password"
+brew "wtfutil"
 brew "z"
 brew "zlib"
 brew "zsh"
@@ -74,13 +78,17 @@ brew "sachaos/todoist/todoist"
 brew "yqrashawn/goku/goku"
 cask "1password-cli"
 cask "alfred"
+cask "anydesk"
 cask "appcleaner"
 cask "authy"
 cask "background-music"
 cask "bartender"
+cask "brave-browser"
+cask "chromium"
 cask "contexts"
 cask "daisydisk"
 cask "dash"
+cask "dbeaver-community"
 cask "docker"
 cask "evernote"
 cask "expressvpn"
@@ -95,6 +103,7 @@ cask "itsycal"
 cask "java"
 cask "karabiner-elements"
 cask "keyboard-maestro"
+cask "kitematic"
 cask "little-snitch"
 cask "ngrok"
 cask "notion"
@@ -111,7 +120,6 @@ cask "wkhtmltopdf"
 mas "1Password 7", id: 1333542190
 mas "2Do", id: 477670270
 mas "Airmail", id: 918858936
-mas "Airmail Zero", id: 1460809171
 mas "Annotate", id: 918207447
 mas "Battery Health", id: 490192174
 mas "Be Focused Pro", id: 961632517
