@@ -21,5 +21,7 @@ eval "$(pyenv init -)"
 source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc'
 source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc'
 
+# pipx
+eval "$(register-python-argcomplete pipx)"
 
 typeset -U PATH # Remove duplicates in $PATH
