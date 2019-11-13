@@ -20,9 +20,6 @@
         path: iTerm/config
         create: true
     # karabiner
-    ~/.config/karabiner/karabiner.json:
-        path: karabiner/karabiner.json
-        create: true
     ~/.config/karabiner.edn:
         path: karabiner/karabiner.edn
         create: true
