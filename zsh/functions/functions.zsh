@@ -68,6 +68,4 @@ start_notebook_sagemaker(){
 # stop_notebook_sagemaker and close task in todoist
 stop_notebook_sagemaker(){
     aws sagemaker stop-notebook-instance --notebook-instance-name pinky
-    notebook_todoist_task_id=$(cat /tmp/running_sagemaker_notebook.txt | awk -F',' '{print $1}')
-    todoist close $notebook_todoist_task_id
 }
