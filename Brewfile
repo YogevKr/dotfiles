@@ -4,36 +4,39 @@ tap "caskroom/cask"
 tap "getantibody/tap"
 tap "homebrew/bundle"
 tap "homebrew/cask"
+tap "homebrew/cask-fonts"
 tap "homebrew/core"
 tap "homebrew/services"
 tap "jesseduffield/lazydocker"
 tap "mas-cli/tap", pin: true
 tap "sachaos/todoist"
+tap "sqitchers/sqitch"
 tap "wtfutil/wtfutil"
 tap "yqrashawn/goku"
 brew "apache-spark"
 brew "autoconf", link: false
 brew "automake", link: false
 brew "bat"
+brew "readline"
+brew "sqlite"
+brew "python"
 brew "coreutils"
 brew "curl"
+brew "dust"
 brew "exa"
 brew "fd"
+brew "ffmpeg"
 brew "fzf"
 brew "gcc"
 brew "gdb"
 brew "geckodriver"
 brew "ghostscript"
 brew "git"
-brew "openssl"
-brew "readline"
-brew "sqlite"
-brew "python"
 brew "go"
-brew "libtool", link: false
 brew "graphviz"
 brew "htop"
 brew "httpie"
+brew "libtool", link: false
 brew "jq"
 brew "lazygit"
 brew "libpcap"
@@ -54,6 +57,8 @@ brew "pyenv"
 brew "python@2"
 brew "rclone"
 brew "redis", restart_service: true
+brew "restic"
+brew "ripgrep"
 brew "ruby", link: true
 brew "s3cmd"
 brew "screenfetch"
@@ -93,8 +98,11 @@ cask "docker"
 cask "evernote"
 cask "expressvpn"
 cask "fantastical"
+cask "ferdi"
 cask "firefox"
 cask "fluid"
+cask "font-fira-code"
+cask "gimp"
 cask "google-backup-and-sync"
 cask "google-chrome"
 cask "google-cloud-sdk"
@@ -103,6 +111,7 @@ cask "itsycal"
 cask "java"
 cask "karabiner-elements"
 cask "keyboard-maestro"
+cask "kite"
 cask "kitematic"
 cask "little-snitch"
 cask "ngrok"
@@ -113,12 +122,13 @@ cask "slack"
 cask "sourcetree"
 cask "spotify"
 cask "telegram"
+cask "transmission"
 cask "tripmode"
 cask "visual-studio-code"
+cask "vlc"
 cask "whatsapp"
 cask "wkhtmltopdf"
 mas "1Password 7", id: 1333542190
-mas "2Do", id: 477670270
 mas "Airmail", id: 918858936
 mas "Annotate", id: 918207447
 mas "Battery Health", id: 490192174
@@ -126,6 +136,7 @@ mas "Be Focused Pro", id: 961632517
 mas "Bear", id: 1091189122
 mas "Dark Reader for Safari", id: 1438243180
 mas "Drawful 2", id: 1121426744
+mas "Jira", id: 1475897096
 mas "Magnet", id: 441258766
 mas "Microsoft Remote Desktop", id: 1295203466
 mas "Numbers", id: 409203825
