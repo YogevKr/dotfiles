@@ -69,3 +69,7 @@ start_notebook_sagemaker(){
 stop_notebook_sagemaker(){
     aws sagemaker stop-notebook-instance --notebook-instance-name pinky
 }
+
+ssh_docker(){
+     ssh $1-jump1 -tt "ssh -i ~/.ssh/docker.pem  ec2-user@$2"
+}

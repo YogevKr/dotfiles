@@ -10,3 +10,5 @@ source ~/.dotfiles/zsh/alias.zsh
 source ~/.dotfiles/zsh/secrets.zsh
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+eval "$(starship init zsh)"

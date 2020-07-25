@@ -9,7 +9,6 @@ export SUDO_EDITOR='nvim'
 # PATH
 export GOPATH="$(go env GOPATH)" # Go
 export PATH="$PATH:$GOPATH/bin" # Go
-export PATH=~/.local/bin:$PATH
 
 # pyenv
 export LDFLAGS="-L/usr/local/opt/readline/lib"
@@ -23,5 +22,6 @@ source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.
 
 # pipx
 eval "$(register-python-argcomplete pipx)"
+export PATH=~/.local/bin:$PATH
 
 typeset -U PATH # Remove duplicates in $PATH
