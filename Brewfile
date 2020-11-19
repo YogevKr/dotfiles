@@ -8,22 +8,30 @@ tap "homebrew/cask-fonts"
 tap "homebrew/core"
 tap "homebrew/services"
 tap "jesseduffield/lazydocker"
-tap "mas-cli/tap", pin: true
+tap "mas-cli/tap"
 tap "sachaos/todoist"
+tap "saulpw/vd"
 tap "sqitchers/sqitch"
 tap "wtfutil/wtfutil"
 tap "yqrashawn/goku"
+cask "osxfuse"
+cask "xquartz"
+brew "amazon-ecs-cli"
+brew "annie"
 brew "apache-spark"
 brew "autoconf", link: false
 brew "automake", link: false
 brew "bat"
+brew "libffi"
 brew "readline"
 brew "sqlite"
-brew "python"
+brew "cairo"
 brew "coreutils"
+brew "ctags"
 brew "curl"
 brew "dust"
 brew "exa"
+brew "ext4fuse"
 brew "fd"
 brew "ffmpeg"
 brew "fzf"
@@ -32,11 +40,13 @@ brew "gdb"
 brew "geckodriver"
 brew "ghostscript"
 brew "git"
+brew "git-lfs"
+brew "gnupg"
 brew "go"
+brew "libtool", link: false
 brew "graphviz"
 brew "htop"
 brew "httpie"
-brew "libtool", link: false
 brew "jq"
 brew "lazygit"
 brew "libpcap"
@@ -45,16 +55,20 @@ brew "libyaml"
 brew "make"
 brew "mitmproxy"
 brew "mosh"
+brew "mplayer"
 brew "neofetch"
 brew "neovim"
 brew "nmap"
 brew "node"
+brew "openjdk"
+brew "perl"
 brew "pgcli"
 brew "piknik"
 brew "postgresql"
 brew "pv"
 brew "pyenv"
 brew "python@2"
+brew "python@3.8"
 brew "rclone"
 brew "redis", restart_service: true
 brew "restic"
@@ -62,14 +76,17 @@ brew "ripgrep"
 brew "ruby", link: true
 brew "s3cmd"
 brew "screenfetch"
+brew "starship"
 brew "tcptraceroute"
 brew "telnet"
 brew "thefuck"
 brew "tmux"
+brew "trash"
 brew "unixodbc"
 brew "unzip"
 brew "wget"
 brew "wifi-password"
+brew "wrk"
 brew "wtfutil"
 brew "z"
 brew "zlib"
@@ -81,21 +98,23 @@ brew "jesseduffield/lazydocker/lazydocker"
 brew "mas-cli/tap/mas"
 brew "sachaos/todoist/todoist"
 brew "yqrashawn/goku/goku"
+cask "1password"
 cask "1password-cli"
 cask "alfred"
 cask "anydesk"
 cask "appcleaner"
 cask "authy"
+cask "azure-data-studio"
 cask "background-music"
 cask "bartender"
 cask "brave-browser"
 cask "chromium"
 cask "contexts"
+cask "cyberduck"
 cask "daisydisk"
 cask "dash"
 cask "dbeaver-community"
 cask "docker"
-cask "evernote"
 cask "expressvpn"
 cask "fantastical"
 cask "ferdi"
@@ -106,6 +125,7 @@ cask "gimp"
 cask "google-backup-and-sync"
 cask "google-chrome"
 cask "google-cloud-sdk"
+cask "google-drive-file-stream"
 cask "iterm2"
 cask "itsycal"
 cask "java"
@@ -118,34 +138,35 @@ cask "ngrok"
 cask "notion"
 cask "paw"
 cask "pdf-expert"
+cask "protonvpn"
 cask "slack"
 cask "sourcetree"
 cask "spotify"
+cask "switchresx"
 cask "telegram"
 cask "transmission"
 cask "tripmode"
 cask "visual-studio-code"
 cask "vlc"
 cask "whatsapp"
+cask "wireshark"
 cask "wkhtmltopdf"
-mas "1Password 7", id: 1333542190
-mas "Airmail", id: 918858936
 mas "Annotate", id: 918207447
 mas "Battery Health", id: 490192174
 mas "Be Focused Pro", id: 961632517
-mas "Bear", id: 1091189122
 mas "Dark Reader for Safari", id: 1438243180
+mas "Drafts", id: 1435957248
 mas "Drawful 2", id: 1121426744
-mas "Jira", id: 1475897096
+mas "Keynote", id: 409183694
 mas "Magnet", id: 441258766
-mas "Microsoft Remote Desktop", id: 1295203466
+mas "MindNode", id: 1289197285
 mas "Numbers", id: 409203825
 mas "Owly", id: 882812218
+mas "Pages", id: 409201541
 mas "Pocket", id: 568494494
 mas "Reeder", id: 1449412482
 mas "SnippetsLab", id: 1006087419
 mas "The Unarchiver", id: 425424353
-mas "Things", id: 904280696
 mas "Todoist", id: 585829637
 mas "Trello", id: 1278508951
 mas "Who's On My WiFi", id: 909760813
