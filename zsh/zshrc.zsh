@@ -12,3 +12,5 @@ source ~/.dotfiles/zsh/secrets.zsh
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 eval "$(starship init zsh)"
+
+export PATH="$HOME/.poetry/bin:$PATH"
