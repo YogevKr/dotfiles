@@ -14,3 +14,10 @@ source ~/.dotfiles/zsh/secrets.zsh
 eval "$(starship init zsh)"
 
 export PATH="$HOME/.poetry/bin:$PATH"
+
+
+#### FIG ENV VARIABLES ####
+[ -s ~/.fig/fig.sh ] && source ~/.fig/fig.sh
+#### END FIG ENV VARIABLES ####
+
+

@@ -12,17 +12,10 @@ export PATH="$PATH:$GOPATH/bin" # Go
 export PATH="$HOME/.poetry/bin:$PATH"
 
 # pyenv
-export LDFLAGS="-L/usr/local/opt/readline/lib"
-#export CPPFLAGS="-I/usr/local/opt/readline/include"
-#export PKG_CONFIG_PATH="/usr/local/opt/readline/lib/pkgconfig"
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init --path)"
 
-#export LDFLAGS="-L/usr/local/opt/openssl@1.1/lib"
-#export CPPFLAGS="-I/usr/local/opt/openssl@1.1/include"
-
-#export LDFLAGS="-L $(xcrun --show-sdk-path)/usr/lib -L brew --prefix bzip2/lib"
-#export CFLAGS="-L $(xcrun --show-sdk-path)/usr/include -L brew --prefix bzip2/include"
-
-eval "$(pyenv init -)"
 
 # gcloud
 source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc'
