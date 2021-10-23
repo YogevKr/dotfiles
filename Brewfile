@@ -176,3 +176,14 @@ mas "Magnet", id: 441258766
 mas "Microsoft Word", id: 462054704
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
+mas "Pocket", id: 568494494
+mas "Reeder", id: 1449412482
+mas "SnippetsLab", id: 1006087419
+mas "Spark", id: 1176895641
+mas "The Unarchiver", id: 425424353
+mas "Things", id: 904280696
+mas "Trello", id: 1278508951
+mas "uBlock", id: 1385985095
+mas "Who's On My WiFi", id: 909760813
+mas "WiFi Explorer", id: 494803304
+mas "Xcode", id: 497799835
