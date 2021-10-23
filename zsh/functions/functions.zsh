@@ -7,14 +7,14 @@ function auto_pipenv_shell {
     fi
 }
 
-function cd {
-    builtin cd "$@"
-    auto_pipenv_shell
-}
+#function cd {
+#    builtin cd "$@"
+#    auto_pipenv_shell
+#}
 
 ## brew install/uninstall and dump
 nbrew() {
-  local dump_commands=('install' 'uninstall' 'cask') # Include all commands that should do a brew dump
+  local dump_commands=('install' 'uninstall' 'update') # Include all commands that should do a brew dump
   local main_command="${1}"
 
   brew ${@}
@@ -56,6 +56,4 @@ re(){
 zs() {
   z $1 && open .
 }
-
-
 
