@@ -7,14 +7,14 @@ function auto_pipenv_shell {
     fi
 }
 
-function cd {
-    builtin cd "$@"
-    auto_pipenv_shell
-}
+#function cd {
+#    builtin cd "$@"
+#    auto_pipenv_shell
+#}
 
 ## brew install/uninstall and dump
 nbrew() {
-  local dump_commands=('install' 'uninstall' 'cask') # Include all commands that should do a brew dump
+  local dump_commands=('install' 'uninstall' 'update') # Include all commands that should do a brew dump
   local main_command="${1}"
 
   brew ${@}
@@ -57,19 +57,3 @@ zs() {
   z $1 && open .
 }
 
-
-# start_notebook_sagemaker and add stop task to todoist
-start_notebook_sagemaker(){
-    aws sagemaker start-notebook-instance --notebook-instance-name pinky
-    echo "https://pinky.notebook.us-east-1.sagemaker.aws/lab"
-}
-
-
-# stop_notebook_sagemaker and close task in todoist
-stop_notebook_sagemaker(){
-    aws sagemaker stop-notebook-instance --notebook-instance-name pinky
-}
-
-ssh_docker(){
-     ssh $1-jump1 -tt "ssh -i ~/.ssh/docker.pem  ec2-user@$2"
-}

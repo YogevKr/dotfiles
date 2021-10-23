@@ -15,3 +15,4 @@
 #### END FIG ENV VARIABLES ####
 
 
+eval "$(/opt/homebrew/bin/brew shellenv)"

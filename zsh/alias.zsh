@@ -5,4 +5,4 @@ alias d='deactivate'
 alias sd='source deactivate'
 alias brewski='brew update && brew upgrade && brew cleanup; brew doctor; brew cask upgrade'
 alias lo='eval $(op signin my)'
-alias brew="env PATH=${PATH//$(pyenv root)\/shims:/} brew"
+#alias brew="env PATH=${PATH//$(pyenv root)\/shims:/} brew"
